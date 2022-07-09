@@ -16,8 +16,7 @@
   <property name="styleSheet">
    <string notr="true">QMainWindow
 {
-	
-	background-color: rgb(153, 153, 153);
+	background-color: rgb(43, 26, 49);
 }
 #closeBt
 {
@@ -96,6 +95,16 @@ border-image: url(:/stop_hover.png);
     <property name="text">
      <string/>
     </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>connect.svg</normaloff>connect.svg</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>45</width>
+      <height>45</height>
+     </size>
+    </property>
    </widget>
    <widget class="QLineEdit" name="portEdit">
     <property name="geometry">
@@ -107,10 +116,10 @@ border-image: url(:/stop_hover.png);
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(153, 153, 153);
-color: rgb(255, 255, 255);
-font: 12pt &quot;Arial Rounded MT Bold&quot;;
-border:1px solid#858585
+     <string notr="true">background-color: rgb(43, 26, 49);
+font: 300 12pt &quot;Bahnschrift Light&quot;;
+border:1px solid#332637;
+color: rgb(87, 247, 245);
 </string>
     </property>
     <property name="placeholderText">
@@ -127,8 +136,11 @@ border:1px solid#858585
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(153, 153, 153);
-font: 12pt &quot;Arial Rounded MT Bold&quot;;</string>
+     <string notr="true">background-color: rgb(43, 26, 49);
+font: 300 10pt &quot;Bahnschrift Light&quot;;
+border:1px solid#332637;
+color: rgb(87, 247, 245);
+</string>
     </property>
    </widget>
    <widget class="QPushButton" name="stopBt">
@@ -143,6 +155,16 @@ font: 12pt &quot;Arial Rounded MT Bold&quot;;</string>
     <property name="text">
      <string/>
     </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>disconnect.svg</normaloff>disconnect.svg</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>45</width>
+      <height>45</height>
+     </size>
+    </property>
    </widget>
    <widget class="QTextBrowser" name="msgBrowser">
     <property name="geometry">
@@ -154,8 +176,11 @@ font: 12pt &quot;Arial Rounded MT Bold&quot;;</string>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(153, 153, 153);
-font: 12pt &quot;Arial Rounded MT Bold&quot;;</string>
+     <string notr="true">	background-color:rgb(51, 38, 55);
+font: 300 12pt &quot;Bahnschrift Light&quot;;
+border:1,5px solid#775e7e;
+color: rgb(87, 247, 245);
+</string>
     </property>
     <property name="lineWrapMode">
      <enum>QTextEdit::WidgetWidth</enum>
@@ -171,8 +196,11 @@ font: 12pt &quot;Arial Rounded MT Bold&quot;;</string>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(153, 153, 153);
-font: 12pt &quot;Arial Rounded MT Bold&quot;;</string>
+     <string notr="true">background-color: rgb(43, 26, 49);
+font: 300 12pt &quot;Bahnschrift Light&quot;;
+border:1px solid#332637;
+color: rgb(87, 247, 245);
+</string>
     </property>
    </widget>
    <widget class="QFrame" name="frame">
@@ -185,7 +213,7 @@ font: 12pt &quot;Arial Rounded MT Bold&quot;;</string>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(43, 43, 43);</string>
+     <string notr="true">background-color:rgb(43, 26, 49);</string>
     </property>
     <property name="frameShape">
      <enum>QFrame::StyledPanel</enum>
@@ -198,12 +226,28 @@ font: 12pt &quot;Arial Rounded MT Bold&quot;;</string>
       <rect>
        <x>15</x>
        <y>13</y>
-       <width>16</width>
-       <height>16</height>
+       <width>20</width>
+       <height>20</height>
       </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Minimum" vsizetype="Ignored">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
      </property>
      <property name="text">
       <string/>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>close.svg</normaloff>close.svg</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>19</width>
+       <height>19</height>
+      </size>
      </property>
     </widget>
     <widget class="QPushButton" name="minBt">
@@ -211,12 +255,16 @@ font: 12pt &quot;Arial Rounded MT Bold&quot;;</string>
       <rect>
        <x>40</x>
        <y>13</y>
-       <width>16</width>
-       <height>16</height>
+       <width>19</width>
+       <height>19</height>
       </rect>
      </property>
      <property name="text">
       <string/>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>collapse.svg</normaloff>collapse.svg</iconset>
      </property>
     </widget>
     <widget class="QPushButton" name="maxBt">
@@ -224,12 +272,22 @@ font: 12pt &quot;Arial Rounded MT Bold&quot;;</string>
       <rect>
        <x>65</x>
        <y>13</y>
-       <width>16</width>
-       <height>16</height>
+       <width>19</width>
+       <height>19</height>
       </rect>
      </property>
      <property name="text">
       <string/>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>resize.svg</normaloff>resize.svg</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>18</width>
+       <height>18</height>
+      </size>
      </property>
     </widget>
    </widget>
@@ -244,6 +302,16 @@ font: 12pt &quot;Arial Rounded MT Bold&quot;;</string>
     </property>
     <property name="text">
      <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>send.svg</normaloff>send.svg</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>48</width>
+      <height>48</height>
+     </size>
     </property>
     <property name="autoDefault">
      <bool>false</bool>
